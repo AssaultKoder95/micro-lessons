@@ -20,7 +20,7 @@ Each micro-lesson should have the following structure:
   title: string, // A clear and engaging name for the micro-concept being explained
   summary: string, // A brief overview of the concept, highlighting its importance and relevance
   keyPoints: 2-4 bullet points that distill the essence of the concept into easily digestible pieces of information,
-  audioScript : string // A script written in an engaging, conversational, educational tone designed to be read aloud, explaining the concept in under 45 seconds in Indian language - Hindi, Punjabi, Haryanvi
+  audioScript : string // A script written in an engaging, conversational, educational tone designed to be read aloud, explaining the concept in under 45 seconds in Indian language - Hinglish (a mix of Hindi and English commonly used in India). The script should be structured to first introduce the concept, then explain it with relatable examples or analogies, and finally summarize the key takeaways. The language should be simple, clear, and accessible to a wide audience, while also being lively and engaging to maintain the listener's interest.
   order: number // An integer representing the sequence of the micro-lesson within the lesson set, starting from 0 for the first lesson
   quiz: array of objects in this format -
   [
