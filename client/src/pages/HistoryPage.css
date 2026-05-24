@@ -1,0 +1,128 @@
+.history-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.history-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.history-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.count-tag {
+  font-family: var(--font-head);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 0;
+  color: var(--muted);
+}
+
+.empty-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--accent);
+  border-bottom: 1.5px solid var(--accent);
+  padding-bottom: 2px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.history-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.5rem;
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+  cursor: pointer;
+}
+
+.history-row:last-child { border-bottom: none; }
+.history-row:hover { background: var(--paper); }
+
+.row-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.row-status {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.row-status[data-status="completed"] { background: #4a9268; }
+.row-status[data-status="processing"] { background: var(--gold); animation: pulse-dot 1.4s infinite; }
+.row-status[data-status="failed"] { background: var(--accent); }
+
+.row-title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row-delete {
+  background: none;
+  color: var(--muted);
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  transition: color 0.2s, background 0.2s;
+}
+
+.row-delete:hover {
+  color: var(--accent);
+  background: rgba(200, 75, 49, 0.08);
+}
+
+.center-msg {
+  text-align: center;
+  padding: 4rem 0;
+  color: var(--muted);
+  font-family: var(--font-head);
+}

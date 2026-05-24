@@ -1,0 +1,67 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero-tag {
+  font-family: var(--font-head);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 1.1rem;
+}
+
+.hero-sub {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.feature-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--cream);
+  border: 1.5px solid var(--border);
+  border-radius: 40px;
+  padding: 0.7rem 1.2rem;
+}
+
+.feature-chip strong {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.feature-chip p {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.feature-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+}
